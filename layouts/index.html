@@ -5,9 +5,11 @@
   </head>
   <body>
     {{ partial "header.html" . }}
-    <main>
-      {{ partial "banner.html" . }}
-      <h1>Untangled</h1>
+    {{ partial "banner.html" . }}
+    <main class="container">
+      {{ partial "overview.html" . }}
+      {{ partial "theme.html" . }}
+      {{ partial "requirements.html" . }}
       {{ partial "form.html" . }}
     </main>
     {{ partial "footer.html" . }}
